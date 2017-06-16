@@ -1,4 +1,10 @@
 def is_binary(num):
+  '''Checks if number is binary.
+
+  num: non-negative int
+
+  returns: boolean
+  '''
   if num < 1:
     return 'invalid argument'
 
@@ -11,4 +17,6 @@ def is_binary(num):
 
 
 if __name__ == '__main__':
-  print(is_binary(20))
+   for num in range(1, 101):
+    if is_binary(num):
+      print(num)
